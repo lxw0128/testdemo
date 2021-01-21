@@ -6,4 +6,4 @@ from BeautifulReport import BeautifulReport
 
 testsuit =unittest.defaultTestLoader.discover('./test/testBaidu',pattern='*.py')
 result = BeautifulReport(testsuit)
-result.report(filename='测试报告', description='测试报告', log_path='./test/testBaidu/report/')
+result.report(filename='testreport', description='testreport', log_path='./test/testBaidu/report/')
