@@ -14,5 +14,9 @@ result.report(filename='testreport', description='testreport', log_path='./test/
 parser = argparse.ArgumentParser()
 parser.add_argument('-e', '--env', help='指定运行的环境,中文即可', type=str)
 args = parser.parse_args()
+param = vars(args)
+v = {}
+for key, value in param.items():
+    v[key] = value
 logger = Logger()
-logger.info('testdemo入参：%s' % args)
+logger.info('testdemo入参：%s' % v)
