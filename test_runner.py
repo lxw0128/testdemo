@@ -20,3 +20,4 @@ for key, value in param.items():
     v[key] = value
 logger = Logger()
 logger.info('testdemo入参：%s' % v)
+print(v.get('env'))
